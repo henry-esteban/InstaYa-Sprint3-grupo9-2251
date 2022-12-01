@@ -1,0 +1,16 @@
+/**{
+	"env": {
+		// no usaremos 3000 puesto que puede generar problemas con nuestro cliente web.
+		"PORT": "<puerto del servidor>",
+		// nombre del archivo donde generaremos nuestros logs con morgan
+		"LOG_ACCESS": "dev.log",
+		// cadena de conexión a nuestra bases de datos en mongo
+		"DB_CONNECTION_STRING": "<mongodb_srv_connection_string>",
+		// valor de la propiedad "kid" de nuestro par de llaves de acceso
+		"ACCESS_TOKEN_SECRET": "<kid_header_value>",
+		// valor de la propiedad "kid" de nuestro par de llaves de refresco
+		"REFRESH_TOKEN_SECRET": "<kid_header_value>",
+		// host de nuestro cliente, como este sera un entorno local, debemos permitir conexiones que provengan desde nuestro cliente local
+		"ALLOWED_HOST": "http://localhost:3000"
+	}
+}/*
